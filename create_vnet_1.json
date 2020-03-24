@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "virtualNetworks_vnet1_name": {
-            "defaultValue": "vnet1",
+            "defaultValue": "Vnet1",
             "type": "String"
         }
     },
@@ -31,7 +31,7 @@
                         }
                     },
                     {
-                        "name": "Subnet1",
+                        "name": "Vnet1_Subnet1",
                         "properties": {
                             "addressPrefix": "10.0.1.0/24",
                             "delegations": [],
@@ -40,7 +40,7 @@
                         }
                     },
                     {
-                        "name": "Subnet2",
+                        "name": "Vnet1_Subnet2",
                         "properties": {
                             "addressPrefix": "10.0.2.0/24",
                             "delegations": [],
@@ -49,7 +49,7 @@
                         }
                     },
                     {
-                        "name": "Subnet3",
+                        "name": "Vnet1_Subnet3",
                         "properties": {
                             "addressPrefix": "10.0.3.0/24",
                             "delegations": [],
