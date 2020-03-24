@@ -2,9 +2,11 @@
     "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "location": "NorthEurope",
+        "location": {
+            "type": "string"
         },
-        "virtualNetworkName": "Vnet1",
+        "virtualNetworkName": {
+            "type": "string"
         },
         "resourceGroup": {
             "type": "string"
@@ -55,10 +57,10 @@
     "variables": {},
     "resources": [
         {
-            "name": "[parameters('virtualNetworkName')]",
+            "name": "Vnet1",
             "type": "Microsoft.Network/VirtualNetworks",
             "apiVersion": "2019-09-01",
-            "location": "[parameters('location')]",
+            "location": "NorthEurope",
             "dependsOn": [],
             "tags": {},
             "properties": {
