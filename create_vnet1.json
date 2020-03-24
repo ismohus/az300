@@ -89,5 +89,14 @@
                         }
                     },
                     {
-         }
-  }
+                        "name": "Subnet3",
+                        "properties": {
+                            "addressPrefix": "10.0.3.0/24"
+                        }
+                    }
+                ],
+                "enableDdosProtection": "[parameters('ddosProtectionPlanEnabled')]"
+            }
+        }
+    ]
+}
